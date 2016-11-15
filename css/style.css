@@ -1,0 +1,156 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: sans-serif;
+}
+
+.pricing-table {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+table {
+	min-width: 767px;
+	border-collapse: collapse;
+	border-color: #dbd9d9;
+}
+
+th, td {
+	border-width: 0 1px 0 0;
+	width: 20rem;
+}
+
+th, [class$="-price"] {
+	border-color: #fff;
+}
+
+th {
+	height: 3rem;
+	font-weight: 400;
+}
+
+[class$="-price"] {
+	height: 10rem;
+	text-align: center;
+}
+
+td {
+	padding-left: 3rem;
+	font-size: 1.1rem;
+	height: 3rem;
+}
+
+td i {
+	padding-right: .7rem;
+}
+
+[class$="-price"] {
+	padding: 0;
+	font-size: 1rem;
+}
+
+td b {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.starter-price {
+	background: #ffa24b;
+	color: #fff;
+}
+
+.pro-price {
+	background: #20adbf;
+	color: #fff;
+}
+
+.master-price {
+	background: #18af98;
+	color: #fff;
+}
+
+.extreme-price {
+	background: #d84131;
+	color: #fff;
+}
+
+button {
+	width: 15rem;
+	height: 3rem;
+	border-width: 0;
+	border-radius: 3px;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.starter-title, .starter-button {
+	background: #ff7d13;
+	color: #fff;
+}
+
+.pro-title, .pro-button {
+	background: #0391a7;
+	color: #fff;
+}
+
+.master-title, .master-button {
+	background: #129176;
+	color: #fff;
+}
+
+.extreme-title, .extreme-button {
+	background: #7e2e27;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 976px) {
+	body::after {
+		content: "976px";
+		position: fixed;
+		top: 0;
+		left: 0;
+		color: green;
+		font-weight: 700;
+	}
+
+	.table-responsive {
+		max-width: 80%;
+		overflow-y: hidden;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body::after {
+		content: "767px";
+		position: fixed;
+		top: 0;
+		left: 0;
+		color: red;
+		font-weight: 700;
+	}
+
+	.table-responsive {
+		max-width: 100%;
+	}
+}
